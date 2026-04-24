@@ -12,7 +12,10 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-6 text-white">
           <li><a href="#hero" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Home</a></li>
           <li><a href="#about" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">About</a></li>
+          <li><a href="#story" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Story</a></li>
+          <li><a href="#timeline" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Timeline</a></li>
           <li><a href="#companies" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Companies</a></li>
+          <li><a href="#visuals" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Visuals</a></li>
           <li><a href="#contact" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Contact</a></li>
         </ul>
         {/* Mobile menu button */}
@@ -34,7 +37,10 @@ const Navbar = () => {
           <ul className="flex flex-col space-y-4 text-white text-center">
             <li><a href="#hero" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Home</a></li>
             <li><a href="#about" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>About</a></li>
+            <li><a href="#story" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Story</a></li>
+            <li><a href="#timeline" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Timeline</a></li>
             <li><a href="#companies" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Companies</a></li>
+            <li><a href="#visuals" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Visuals</a></li>
             <li><a href="#contact" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Contact</a></li>
           </ul>
         </div>
