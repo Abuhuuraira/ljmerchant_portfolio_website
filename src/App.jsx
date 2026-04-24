@@ -135,15 +135,27 @@ function App() {
           className="content story-content"
         >
           <h2>My Story</h2>
-          <p>
+          <motion.p
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             My journey into MedTech started not in a boardroom, but in a bedroom. It began with a deep curiosity about how innovation can transform healthcare. I and my Wife became fascinated by the potential of technology to improve lives and solve complex medical challenges.
-          </p>
-          <p>
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             Over time, that curiosity turned into a mission – to build systems, ideas, and companies focused on the future of medicine. I believe the intersection of technology, research, and entrepreneurship will define the next generation of healthcare breakthroughs.
-          </p>
-          <p>
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             Today, I continue exploring new opportunities in MedTech, working toward solutions that can make healthcare more intelligent, accessible, and impactful for people around the world.
-          </p>
+          </motion.p>
           <motion.div
             className="mission-box"
             initial={{ opacity: 0, x: 100 }}
