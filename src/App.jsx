@@ -125,7 +125,7 @@ function App() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="content"
+          className="content story-content"
         >
           <h2>My Story</h2>
           <p>
@@ -137,10 +137,17 @@ function App() {
           <p>
             Today, I continue exploring new opportunities in MedTech, working toward solutions that can make healthcare more intelligent, accessible, and impactful for people around the world.
           </p>
-          <h3>Mission</h3>
-          <p>
-            To push the boundaries of medical technology and contribute to a future where innovation dramatically improves human health and longevity.
-          </p>
+          <motion.div
+            className="mission-box"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h3>Mission</h3>
+            <p>
+              To push the boundaries of medical technology and contribute to a future where innovation dramatically improves human health and longevity.
+            </p>
+          </motion.div>
         </motion.div>
       </section>
 
