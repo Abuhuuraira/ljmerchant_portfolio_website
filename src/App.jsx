@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import emailjs from 'emailjs-com';
+import ljmerchantImage from './assets/limerchantimage.png';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Statistics from './components/Statistics';
@@ -64,24 +65,57 @@ function App() {
       </section>
 
       {/* About Me */}
-      <section id="about" className="section pt-20">
-        <motion.div
+      <section id="about" className="section pt-15">
+        <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           className="content"
         >
-          <h2>About Me</h2>
-          <p>
-            I'm LJ Merchant, a builder focused on the future of MedTech. My mission is to explore and develop innovations that improve healthcare,
-            extend human capability, and push the boundaries of what technology can achieve in medicine.
-          </p>
-          <p>
-            I'm passionate about combining technology, entrepreneurship, and research to create solutions that can transform the way healthcare works. From digital health platforms to next-generation medical tools, my focus is on building systems that can make healthcare smarter, faster, and more accessible.
-          </p>
-          <p>
-            Through my projects and companies, I aim to contribute to a future where technology empowers doctors, improves patient outcomes, and helps shape a new era of medicine.
-          </p>
+          <h2>About Me
+            </h2>
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch"
+        >
+          {/* Image Column */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="flex justify-center"
+            style={{ height: '390px' }}
+          >
+            <img 
+              src={ljmerchantImage}
+              alt="LJ Merchant" 
+              className="rounded-xl shadow-4xl "
+            />
+          </motion.div>
+
+          {/* Text Column */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="relative"
+          >
+            <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm p-6 md:p-8 rounded-2xl shadow-2xl border border-cyan-500/10">
+              <p className="text-base mb-4 text-gray-300">
+                I'm LJ Merchant, a builder focused on the future of MedTech. My mission is to explore and develop innovations that improve healthcare,
+                extend human capability, and push the boundaries of what technology can achieve in medicine.
+              </p>
+              <p className="text-base mb-4 text-gray-300">
+                I'm passionate about combining technology, entrepreneurship, and research to create solutions that can transform the way healthcare works. From digital health platforms to next-generation medical tools, my focus is on building systems that can make healthcare smarter, faster, and more accessible.
+              </p>
+              <p className="text-base text-gray-300">
+                Through my projects and companies, I aim to contribute to a future where technology empowers doctors, improves patient outcomes, and helps shape a new era of medicine.
+              </p>
+            </div>
+          </motion.div>
         </motion.div>
       </section>
 
