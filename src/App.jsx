@@ -8,6 +8,8 @@ import medtechKitsImage from './assets/medtechkit-image.png';
 import tmaImage from './assets/TMA.png';
 import mcaExposeImage from './assets/mcexpose_image.svg';
 import simulationImage from './assets/MedTech-simulation.png';
+import ljmerchantVisualImage from './assets/ljmerchant-visual-image.png';
+import medtechVisualImage from './assets/medtech-visual-image.png';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Statistics from './components/Statistics';
@@ -285,8 +287,8 @@ function App() {
         >
           <h2>MedTech Visuals</h2>
           <div className="visuals-grid">
-            <img src="https://ljmerchant.com/images/medtech.jpg" alt="MedTech" className="visual-image" />
-            <img src="https://ljmerchant.com/images/ljmerchant.jpg" alt="LJ Merchant" className="visual-image" />
+            <img src={medtechVisualImage} alt="MedTech" className="visual-image" />
+            <img src={ljmerchantVisualImage} alt="LJ Merchant" className="visual-image" />
           </div>
         </motion.div>
       </section>
