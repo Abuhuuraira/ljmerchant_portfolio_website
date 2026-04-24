@@ -96,3 +96,82 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+@keyframes twinkle-border {
+  0%, 100% {
+    border-bottom-color: rgba(0, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+  }
+  50% {
+    border-bottom-color: rgba(0, 255, 255, 0.8);
+    box-shadow: 0 4px 25px rgba(0, 255, 255, 0.8);
+  }
+}
+
+.navbar-twinkle {
+  border-bottom: 2px solid;
+  animation: twinkle-border 2s ease-in-out infinite;
+}
+
+@keyframes underline-slide {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00d9ff;
+  transition: width 0.3s ease-out;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes subtle-scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.medtech-modern {
+  background: linear-gradient(90deg, #00ffff, #0099ff, #00ffff, #0099ff, #00ffff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-flow 4s ease-in-out infinite, subtle-scale 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.6)) drop-shadow(0 0 30px rgba(0, 153, 255, 0.3));
+  letter-spacing: 2px;
+  font-weight: 900;
+}

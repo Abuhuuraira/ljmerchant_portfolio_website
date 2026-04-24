@@ -4,16 +4,16 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-gray-900 to-black p-4 fixed top-0 w-full z-10 shadow-lg">
+    <nav className="bg-black/30 backdrop-blur-lg p-4 fixed top-0 w-full z-10 shadow-lg navbar-twinkle border-b border-cyan-400/20">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">
           <span className="text-cyan-400">LJ</span> Merchant
         </div>
         <ul className="hidden md:flex space-x-6 text-white">
-          <li><a href="#hero" className="py-2 px-4 rounded-lg hover:bg-cyan-500/20 hover:text-cyan-400 font-medium transition-all duration-300">Home</a></li>
-          <li><a href="#about" className="py-2 px-4 rounded-lg hover:bg-cyan-500/20 hover:text-cyan-400 font-medium transition-all duration-300">About</a></li>
-          <li><a href="#companies" className="py-2 px-4 rounded-lg hover:bg-cyan-500/20 hover:text-cyan-400 font-medium transition-all duration-300">Companies</a></li>
-          <li><a href="#contact" className="py-2 px-4 rounded-lg hover:bg-cyan-500/20 hover:text-cyan-400 font-medium transition-all duration-300">Contact</a></li>
+          <li><a href="#hero" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Home</a></li>
+          <li><a href="#about" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">About</a></li>
+          <li><a href="#companies" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Companies</a></li>
+          <li><a href="#contact" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Contact</a></li>
         </ul>
         {/* Mobile menu button */}
         <div className="md:hidden">
@@ -30,12 +30,12 @@ const Navbar = () => {
       </div>
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-900 mt-4 py-4">
+        <div className="md:hidden bg-black/40 backdrop-blur-lg mt-4 py-4 rounded-lg">
           <ul className="flex flex-col space-y-4 text-white text-center">
-            <li><a href="#hero" className="py-2 px-4 rounded-lg hover:bg-cyan-500/20 hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Home</a></li>
-            <li><a href="#about" className="py-2 px-4 rounded-lg hover:bg-cyan-500/20 hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>About</a></li>
-            <li><a href="#companies" className="py-2 px-4 rounded-lg hover:bg-cyan-500/20 hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Companies</a></li>
-            <li><a href="#contact" className="py-2 px-4 rounded-lg hover:bg-cyan-500/20 hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Contact</a></li>
+            <li><a href="#hero" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Home</a></li>
+            <li><a href="#about" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>About</a></li>
+            <li><a href="#companies" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Companies</a></li>
+            <li><a href="#contact" className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300 block" onClick={() => setIsOpen(false)}>Contact</a></li>
           </ul>
         </div>
       )}

@@ -37,7 +37,7 @@ function App() {
             transition={{ duration: 1 }}
             className="text-5xl md:text-7xl font-bold mb-6"
           >
-            Building The Future of <span className="text-cyan-400 glow-text">MedTech</span>
+            Building The Future of <span className="medtech-modern">MedTech</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -51,7 +51,7 @@ function App() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center mt-8"
           >
             <button className="bg-cyan-500 hover:bg-cyan-600 text-black font-semibold py-3 px-8 rounded-full transition duration-300 shadow-lg hover:shadow-cyan-500/50">
               Learn More

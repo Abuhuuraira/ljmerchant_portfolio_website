@@ -28,10 +28,10 @@ const Footer = () => {
           >
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#hero" className="text-gray-400 hover:text-cyan-400 transition">Home</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-cyan-400 transition">About</a></li>
-              <li><a href="#companies" className="text-gray-400 hover:text-cyan-400 transition">Companies</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-cyan-400 transition">Contact</a></li>
+              <li><a href="#hero" className="underline-animation text-gray-400 hover:text-cyan-400 transition">Home</a></li>
+              <li><a href="#about" className="underline-animation text-gray-400 hover:text-cyan-400 transition">About</a></li>
+              <li><a href="#companies" className="underline-animation text-gray-400 hover:text-cyan-400 transition">Companies</a></li>
+              <li><a href="#contact" className="underline-animation text-gray-400 hover:text-cyan-400 transition">Contact</a></li>
             </ul>
           </motion.div>
 
@@ -43,9 +43,9 @@ const Footer = () => {
           >
             <h4 className="text-white font-semibold mb-4">Follow</h4>
             <ul className="space-y-2">
-              <li><a href="https://www.linkedin.com/company/medtechkits" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition">LinkedIn</a></li>
-              <li><a href="https://medtechkits.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition">MedTech Store</a></li>
-              <li><a href="mailto:info@medtechkits.com" className="text-gray-400 hover:text-cyan-400 transition">Email</a></li>
+              <li><a href="https://www.linkedin.com/company/medtechkits" target="_blank" rel="noopener noreferrer" className="underline-animation text-gray-400 hover:text-cyan-400 transition">LinkedIn</a></li>
+              <li><a href="https://medtechkits.com/" target="_blank" rel="noopener noreferrer" className="underline-animation text-gray-400 hover:text-cyan-400 transition">MedTech Store</a></li>
+              <li><a href="mailto:info@medtechkits.com" className="underline-animation text-gray-400 hover:text-cyan-400 transition">Email</a></li>
             </ul>
           </motion.div>
 
@@ -57,7 +57,7 @@ const Footer = () => {
           >
             <h4 className="text-white font-semibold mb-4">Get In Touch</h4>
             <p className="text-gray-400 mb-2">Email</p>
-            <a href="mailto:info@medtechkits.com" className="text-cyan-400 hover:text-cyan-300 transition block mb-4">
+            <a href="mailto:info@medtechkits.com" className="underline-animation text-cyan-400 hover:text-cyan-300 transition block mb-4">
               info@medtechkits.com
             </a>
             <p className="text-gray-400 mb-2">Location</p>
@@ -77,8 +77,8 @@ const Footer = () => {
               © {currentYear} LJ Merchant. All rights reserved.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-500 hover:text-cyan-400 text-sm transition">Privacy Policy</a>
-              <a href="#" className="text-gray-500 hover:text-cyan-400 text-sm transition">Terms of Service</a>
+              <a href="#" className="underline-animation text-gray-500 hover:text-cyan-400 text-sm transition">Privacy Policy</a>
+              <a href="#" className="underline-animation text-gray-500 hover:text-cyan-400 text-sm transition">Terms of Service</a>
             </div>
           </div>
         </motion.div>
