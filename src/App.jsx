@@ -80,6 +80,7 @@ function App() {
         >
           <h2>About Me
             </h2>
+            
         </motion.h2>
         <motion.div
           initial={{ opacity: 0 }}
