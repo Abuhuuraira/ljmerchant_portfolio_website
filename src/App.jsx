@@ -109,7 +109,7 @@ function App() {
             transition={{ duration: 1 }}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm p-6 md:p-8 rounded-2xl shadow-2xl border border-cyan-500/10">
+            <div className="about-text-box bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm p-6 md:p-8 rounded-2xl shadow-2xl border border-cyan-500/10">
               <p className="text-base mb-4 text-gray-300">
                 I'm LJ Merchant, a builder focused on the future of MedTech. My mission is to explore and develop innovations that improve healthcare,
                 extend human capability, and push the boundaries of what technology can achieve in medicine.
