@@ -1,25 +1,30 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Counter from './Counter';
 
 const Statistics = () => {
   const stats = [
     {
-      number: '500+',
+      number: 500,
+      suffix: '+',
       label: 'EMS Students Equipped',
       description: 'Helping students prepare for clinical training'
     },
     {
-      number: '50+',
+      number: 50,
+      suffix: '+',
       label: 'Healthcare Institutions',
       description: 'Partnering with training programs nationwide'
     },
     {
-      number: '5+',
+      number: 5,
+      suffix: '+',
       label: 'Years in MedTech',
       description: 'Continuous innovation and development'
     },
     {
-      number: '100%',
+      number: 100,
+      suffix: '%',
       label: 'Commitment to Excellence',
       description: 'Dedicated to transforming healthcare education'
     }
@@ -80,7 +85,7 @@ const Statistics = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-5xl font-bold text-cyan-400 mb-3"
               >
-                {stat.number}
+                <Counter end={stat.number} suffix={stat.suffix} duration={2} />
               </motion.div>
               <h3 className="text-xl font-semibold text-white mb-2">
                 {stat.label}
