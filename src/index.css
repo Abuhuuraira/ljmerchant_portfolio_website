@@ -319,6 +319,33 @@ code {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 153, 255, 0.05));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.3s ease;
+  padding: 8px;
+}
+
+.ecosystem-card:hover .card-image {
+  transform: scale(1.15) rotate(5deg);
 }
 
 .ecosystem-card::before {
@@ -387,6 +414,8 @@ code {
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .card-button:hover {

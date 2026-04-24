@@ -4,6 +4,10 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import emailjs from 'emailjs-com';
 import ljmerchantImage from './assets/limerchantimage.png';
+import medtechKitsImage from './assets/medtechkit-image.png';
+import tmaImage from './assets/TMA.png';
+import mcaExposeImage from './assets/mcexpose_image.svg';
+import simulationImage from './assets/MedTech-simulation.png';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Statistics from './components/Statistics';
@@ -211,11 +215,13 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <div className="card-icon">🏥</div>
+              <div className="card-image-container">
+                <img src={medtechKitsImage} alt="MedTech Kits" className="card-image" />
+              </div>
               <h3>MedTech Kits Store</h3>
               <span className="card-tag">E-commerce</span>
               <p>Pre-assembled and customizable EMS supply kits designed specifically for medical students and training programs. Everything needed for clinical success.</p>
-              <button className="card-button">View Store</button>
+              <a href="https://medtechkits.com/" target="_blank" rel="noopener noreferrer" className="card-button">View Store</a>
             </motion.div>
 
             {/* TMA - Trainer Monitor App Card */}
@@ -225,11 +231,13 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="card-icon">📊</div>
+              <div className="card-image-container">
+                <img src={tmaImage} alt="TMA Trainer Monitor" className="card-image" />
+              </div>
               <h3>TMA Trainer Monitor</h3>
               <span className="card-tag">Web App</span>
               <p>Advanced dashboard for tracking student performance, progress monitoring, and comprehensive training analytics in real-time.</p>
-              <button className="card-button">Learn More</button>
+              <a href="https://trainingmonitor.app/" target="_blank" rel="noopener noreferrer" className="card-button">Learn More</a>
             </motion.div>
 
             {/* MCA Exposure Card */}
@@ -239,11 +247,13 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <div className="card-icon">🧠</div>
+              <div className="card-image-container">
+                <img src={mcaExposeImage} alt="MCA Exposure" className="card-image" />
+              </div>
               <h3>MCA Exposure</h3>
               <span className="card-tag">Educational</span>
               <p>Comprehensive awareness platform for medical concepts and healthcare education. Empowering learners with knowledge and insights.</p>
-              <button className="card-button">Explore</button>
+              <a href="https://mca.exposed/" target="_blank" rel="noopener noreferrer" className="card-button">Explore</a>
             </motion.div>
 
             {/* MedTech Simulation Card */}
@@ -253,11 +263,13 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <div className="card-icon">🧬</div>
+              <div className="card-image-container">
+                <img src={simulationImage} alt="MedTech Simulation" className="card-image" />
+              </div>
               <h3>MedTech Simulation</h3>
               <span className="card-tag">Simulation</span>
               <p>Interactive simulation tools and product catalog designed to provide realistic training scenarios and hands-on learning experiences.</p>
-              <button className="card-button">Start Simulating</button>
+              <a href="https://medtechsimulation.com/index" target="_blank" rel="noopener noreferrer" className="card-button">Start Simulating</a>
             </motion.div>
           </div>
         </motion.div>
