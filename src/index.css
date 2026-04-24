@@ -276,3 +276,122 @@ code {
   background: linear-gradient(90deg, transparent, #00ffff, transparent);
   border-radius: 2px;
 }
+
+/* MedTech Ecosystem Styles */
+.ecosystem-story {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 153, 255, 0.02) 100%);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.ecosystem-story p {
+  color: var(--text);
+  line-height: 160%;
+  font-size: 16px;
+}
+
+@keyframes liftUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.ecosystem-card {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.08) 0%, rgba(0, 153, 255, 0.04) 100%);
+  border: 2px solid rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.ecosystem-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(0, 255, 255, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.ecosystem-card:hover {
+  border-color: rgba(0, 255, 255, 0.6);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3), inset 0 0 20px rgba(0, 255, 255, 0.05);
+  animation: liftUp 1s ease-in-out infinite;
+}
+
+.ecosystem-card:hover::before {
+  opacity: 1;
+}
+
+.card-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.ecosystem-card h3 {
+  color: var(--text-h);
+  font-size: 20px;
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+.card-tag {
+  display: inline-block;
+  background: rgba(0, 255, 255, 0.2);
+  color: var(--accent);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.ecosystem-card p {
+  color: var(--text);
+  line-height: 150%;
+  font-size: 14px;
+  margin: 16px 0 20px;
+  min-height: 60px;
+}
+
+.card-button {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.2), rgba(0, 153, 255, 0.1));
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.card-button:hover {
+  background: var(--accent);
+  color: var(--bg);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  transform: scale(1.05);
+}

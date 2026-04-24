@@ -190,20 +190,75 @@ function App() {
           transition={{ duration: 1 }}
           className="content"
         >
-          <h2>My Companies</h2>
-          <div className="companies-list">
-            <div className="company">
-              <h3>MedTech</h3>
-              <p>A MedTech initiative focused on providing pre-assembled and customizable EMS supply kits that help students enter clinical training fully prepared.</p>
-            </div>
-            <div className="company">
-              <h3>Future Health Tools</h3>
-              <p>A concept project aimed at building digital tools and innovative solutions that improve healthcare education and training systems.</p>
-            </div>
-            <div className="company">
-              <h3>Innovation Lab</h3>
-              <p>A space dedicated to experimenting with new ideas, prototypes, and technologies focused on advancing medical training and healthcare accessibility.</p>
-            </div>
+          <h2>MedTech Ecosystem</h2>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="ecosystem-story"
+          >
+            <p>
+              We build an integrated MedTech ecosystem — from physical training kits to digital platforms that support learning, monitoring, and awareness in modern healthcare education. Each platform is designed to work seamlessly, creating a complete solution for medical professionals and students.
+            </p>
+          </motion.div>
+
+          <div className="ecosystem-grid">
+            {/* MedTech Kits Store Card */}
+            <motion.div
+              className="ecosystem-card"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <div className="card-icon">🏥</div>
+              <h3>MedTech Kits Store</h3>
+              <span className="card-tag">E-commerce</span>
+              <p>Pre-assembled and customizable EMS supply kits designed specifically for medical students and training programs. Everything needed for clinical success.</p>
+              <button className="card-button">View Store</button>
+            </motion.div>
+
+            {/* TMA - Trainer Monitor App Card */}
+            <motion.div
+              className="ecosystem-card"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <div className="card-icon">📊</div>
+              <h3>TMA Trainer Monitor</h3>
+              <span className="card-tag">Web App</span>
+              <p>Advanced dashboard for tracking student performance, progress monitoring, and comprehensive training analytics in real-time.</p>
+              <button className="card-button">Learn More</button>
+            </motion.div>
+
+            {/* MCA Exposure Card */}
+            <motion.div
+              className="ecosystem-card"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              <div className="card-icon">🧠</div>
+              <h3>MCA Exposure</h3>
+              <span className="card-tag">Educational</span>
+              <p>Comprehensive awareness platform for medical concepts and healthcare education. Empowering learners with knowledge and insights.</p>
+              <button className="card-button">Explore</button>
+            </motion.div>
+
+            {/* MedTech Simulation Card */}
+            <motion.div
+              className="ecosystem-card"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <div className="card-icon">🧬</div>
+              <h3>MedTech Simulation</h3>
+              <span className="card-tag">Simulation</span>
+              <p>Interactive simulation tools and product catalog designed to provide realistic training scenarios and hands-on learning experiences.</p>
+              <button className="card-button">Start Simulating</button>
+            </motion.div>
           </div>
         </motion.div>
       </section>
