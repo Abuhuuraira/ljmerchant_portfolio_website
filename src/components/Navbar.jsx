@@ -21,12 +21,12 @@ const Navbar = () => {
         </div>
         <ul className="hidden md:flex space-x-6 text-white">
           <li><a href="/" onClick={(e) => scrollToSection(e, 'hero')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Home</a></li>
-          <li><a href="/" onClick={(e) => scrollToSection(e, 'about')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">About</a></li>
-          <li><a href="/" onClick={(e) => scrollToSection(e, 'story')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Story</a></li>
-          <li><a href="/" onClick={(e) => scrollToSection(e, 'timeline')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Timeline</a></li>
-          <li><a href="/" onClick={(e) => scrollToSection(e, 'companies')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Companies</a></li>
-          <li><a href="/" onClick={(e) => scrollToSection(e, 'visuals')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Visuals</a></li>
-          <li><a href="/" onClick={(e) => scrollToSection(e, 'contact')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Contact</a></li>
+          <li><a href="about" onClick={(e) => scrollToSection(e, 'about')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">About</a></li>
+          <li><a href="story" onClick={(e) => scrollToSection(e, 'story')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Story</a></li>
+          <li><a href="timeline" onClick={(e) => scrollToSection(e, 'timeline')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Timeline</a></li>
+          <li><a href="companies" onClick={(e) => scrollToSection(e, 'companies')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Companies</a></li>
+          <li><a href="visuals" onClick={(e) => scrollToSection(e, 'visuals')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Visuals</a></li>
+          <li><a href="contact" onClick={(e) => scrollToSection(e, 'contact')} className="underline-animation py-2 px-4 rounded-lg hover:text-cyan-400 font-medium transition-all duration-300">Contact</a></li>
         </ul>
         {/* Mobile menu button */}
         <div className="md:hidden">

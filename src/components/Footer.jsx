@@ -4,6 +4,14 @@ import { motion } from 'framer-motion';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      window.history.pushState(null, null, window.location.pathname);
+    }
+  };
+
   return (
     <footer className="bg-black border-t border-cyan-500/20">
       <div className="container mx-auto px-4 py-12">
@@ -28,10 +36,10 @@ const Footer = () => {
           >
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#hero" className="underline-animation text-gray-400 hover:text-cyan-400 transition">Home</a></li>
-              <li><a href="#about" className="underline-animation text-gray-400 hover:text-cyan-400 transition">About</a></li>
-              <li><a href="#companies" className="underline-animation text-gray-400 hover:text-cyan-400 transition">Companies</a></li>
-              <li><a href="#contact" className="underline-animation text-gray-400 hover:text-cyan-400 transition">Contact</a></li>
+              <li><a href="home" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} className="underline-animation text-gray-400 hover:text-cyan-400 transition cursor-pointer">Home</a></li>
+              <li><a href="about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="underline-animation text-gray-400 hover:text-cyan-400 transition cursor-pointer">About</a></li>
+              <li><a href="companies" onClick={(e) => { e.preventDefault(); scrollToSection('companies'); }} className="underline-animation text-gray-400 hover:text-cyan-400 transition cursor-pointer">Companies</a></li>
+              <li><a href="contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="underline-animation text-gray-400 hover:text-cyan-400 transition cursor-pointer">Contact</a></li>
             </ul>
           </motion.div>
 
