@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import emailjs from 'emailjs-com';
+
 import ljmerchantImage from './assets/limerchantimage.png';
 import medtechKitsImage from './assets/medtechkit-image.png';
 import tmaImage from './assets/TMA.png';
@@ -25,11 +25,32 @@ function App() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    emailjs.send('service_id', 'template_id', formData, 'user_id')
-      .then(() => setIsSent(true))
-      .catch(() => alert('Error sending message'));
+    
+    try {
+      const response = await fetch('http://localhost:5000/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setIsSent(true);
+        setFormData({ name: '', email: '', message: '' });
+        // Reset message after 3 seconds
+        setTimeout(() => setIsSent(false), 3000);
+      } else {
+        alert('Error: ' + (data.message || 'Failed to send message'));
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Error sending message. Please check if the backend server is running on port 5000.');
+    }
   };
 
   return (
