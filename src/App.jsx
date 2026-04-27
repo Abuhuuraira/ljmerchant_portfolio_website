@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
 import ljmerchantImage from './assets/limerchantimage.png';
 import medtechKitsImage from './assets/medtechkit-image.png';
 import tmaImage from './assets/TMA.png';
