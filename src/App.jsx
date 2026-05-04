@@ -92,7 +92,7 @@ function App() {
 
       {/* About Me */}
       <section id="about" className="section pt-15">
-        <motion.h2
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -101,7 +101,7 @@ function App() {
           <h2>About Me
             </h2>
             
-        </motion.h2>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
